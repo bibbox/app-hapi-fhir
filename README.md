@@ -5,7 +5,7 @@ This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en
 After the installation follow these [instructions](INSTALL-APP.md)
 
 ## Hints
-* approx. time with medium fast internet connection: **todo**
+* approx. time with medium fast internet connection: **10 minutes**
 * initial user/password: **no authorization implemented yet**
 
 ## Install within BIBBOX
@@ -25,11 +25,6 @@ To install the app locally execute the commands:
   * `git clone https://github.com/bibbox/app-hapi-fhir.git`
 * Change the current directory to app-molgenis: 
   * `cd app-hapi-fhir/` 
-* Create the directories `data/configs`, `data/postgresql/data`:
-  * `mkdir -p data/configs` 
-  * `mkdir -p data/postgresql/data`
- * Copy the file `another.application.yaml` to `./data/configs/another.application.yaml`: 
-  * `cp another.application.yaml data/configs/another.application.yaml`
 * Change the permission of the directory `./data`: 
   * `chmod -R 777 data`
 * Create the docker network `bibbox-default-network`: 
