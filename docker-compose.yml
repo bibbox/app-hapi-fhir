@@ -12,6 +12,7 @@ services:
     - ./data/configs:/data/hapi
     environment:
       SPRING_CONFIG_LOCATION: 'file:///data/hapi/another.application.yaml'
+      #HOST: 'http://127.0.0.1:8080'
     depends_on:
     - bibbox-hapi-fhir-postgres
     links:
