@@ -12,6 +12,7 @@ services:
     - ./data/configs:/data/hapi
     environment:
       SPRING_CONFIG_LOCATION: 'file:///data/hapi/another.application.yaml'
+      HOST: §§INSTANCE.§§BASEURL
     depends_on:
     - §§INSTANCE-hapi-fhir-postgres
     links:
