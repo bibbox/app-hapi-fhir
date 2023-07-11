@@ -16,8 +16,8 @@ Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/ 
 * None
 
 ## Docker Images Used
- * [hapiproject/hapi:5.6.0](https://hub.docker.com/r/hapiproject/hapi/tags), HAPI FHIR JPA image 
- * [postgres:11-alpine](https://hub.docker.com/_/postgres), offical postgres image
+ * [hapiproject/hapi:6.6.0](https://hub.docker.com/r/hapiproject/hapi/tags), HAPI FHIR JPA image 
+ * [postgres:13-bullseye](https://hub.docker.com/_/postgres), offical postgres image
 ## Standalone Installation
 
 To install the app locally execute the commands:
