@@ -4,8 +4,6 @@ services:
     image: hapiproject/hapi:v6.6.0
     container_name: bibbox-hapi-fhir-jpaserver-start
     restart: on-failure
-    ports:
-      - "8081:8080"
     networks:
     - bibbox-default-network
     volumes:

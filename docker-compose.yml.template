@@ -5,7 +5,7 @@ services:
     container_name: §§INSTANCE-hapi-fhir-jpaserver-start
     restart: on-failure
     ports:
-      - "8081:8080"
+      - "8080:8080"
     networks:
     - bibbox-default-network
     volumes:
