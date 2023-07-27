@@ -1,0 +1,32 @@
+version: "3"
+services:
+  bibbox-hapi-fhir-jpaserver-start:
+    image: hapiproject/hapi:v6.6.0
+    container_name: bibbox-hapi-fhir-jpaserver-start
+    restart: on-failure
+    networks:
+    - bibbox-default-network
+    volumes:
+    - ./data/configs:/data/hapi
+    environment:
+      SPRING_CONFIG_LOCATION: 'file:///data/hapi/another.application.yaml'
+      #HOST: 'http://127.0.0.1:8080'
+    depends_on:
+    - bibbox-hapi-fhir-postgres
+    links:
+    - bibbox-hapi-fhir-postgres:hapi-fhir-postgres
+  bibbox-hapi-fhir-postgres:
+    container_name: bibbox-hapi-fhir-postgres
+    environment:
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=admin
+    - POSTGRES_DB=hapi
+    image: postgres:13.11-bullseye
+    networks:
+    - bibbox-default-network
+    restart: always
+    volumes:
+    - ./data/postgresql/data:/var/lib/postgresql/data
+networks:
+  bibbox-default-network:
+    external: true
