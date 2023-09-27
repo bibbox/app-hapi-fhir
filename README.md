@@ -1,42 +1,42 @@
-# HAPI FHIR BIBBOX application
+# hapi-fhir BIBBOX application
 
-This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX") or standalone.
- 
-After the installation follow these [instructions](INSTALL-APP.md)
+This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
 
-## Hints
-* approx. time with medium fast internet connection: **10 minutes**
-* initial user/password: **no authorization implemented yet**
+- after the docker installation follow these [instructions](INSTALL-APP.md)
+
+## Standalone Installation 
+
+Clone the github repository. If necessary change the ports in the environment file `.env` and the volume mounts in `docker-compose.yml`.
+
+```
+git clone https://github.com/bibbox/app-hapi-fhir
+cd app-hapi-fhir
+docker-compose up -d
+```
+
+The main app can be opened and set up at
+```
+http://localhost:8080
+```
 
 ## Install within BIBBOX
 
-Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/ "BIBBOX") to install a lot of software tools. After the installation is finished you can start your application in the dashboard.
+Visit the BIBBOX page and find the App by its name in the Store. Click on the symbol and select Install. Then fill the parameters below and name your app click install again.
 
-### Install Environment Variables
-* None
+## Docker Images used
+  - [hapiproject/hapi](https://hub.docker.com/r/hapiproject/hapi) 
+  - [postgres](https://hub.docker.com/r/postgres) 
 
-## Docker Images Used
- * [hapiproject/hapi:6.6.0](https://hub.docker.com/r/hapiproject/hapi/tags), HAPI FHIR JPA image 
- * [postgres:13-bullseye](https://hub.docker.com/_/postgres), offical postgres image
-## Standalone Installation
 
-To install the app locally execute the commands:
-* Clone the git repository: 
-  * `git clone https://github.com/bibbox/app-hapi-fhir.git`
-* Change the current directory to app-molgenis: 
-  * `cd app-hapi-fhir/` 
-* Change the permission of the directory `./data`: 
-  * `chmod -R 777 data`
-* Create the docker network `bibbox-default-network`: 
-  * `docker network create bibbox-default-network`
-* Run **docker-compose up** in the root folder of the project: 
-  * `docker-compose up -d`
-* **Alternatively** on a *Linux* system run the bash script `intsall.sh` after cloning and change the working directory to the git repository directory.
  
+## Install Environment Variables
 
-After the installation (might take a few minutes) open **http://localhost:8080** in your browser to access the HAPI FHIR Server.
+  
+The default values for the standalone installation are:
 
+  
 ## Mounted Volumes
-* ./data/configs
-* ./data/postgresql/data
-
+### hapiproject/hapi Conatiner
+  - *./data/configs:/data/hapi*
+### postgres Conatiner
+  - *./data/postgresql/data:/var/lib/postgresql/data*
