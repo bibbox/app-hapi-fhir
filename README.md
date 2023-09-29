@@ -37,8 +37,8 @@ The default values for the standalone installation are:
 
   
 ## Mounted Volumes
-### hapiproject/hapi Conatiner
+### hapiproject/hapi Container
   - *./data/configs:/data/hapi*
-### postgres Conatiner
+### postgres Container
   - *./data/postgresql/data:/var/lib/postgresql/data*
 
