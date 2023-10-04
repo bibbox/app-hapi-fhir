@@ -1,4 +1,4 @@
-# hapi-fhir BIBBOX application
+# HAPI-FHIR BIBBOX application
 
 This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
 
@@ -42,3 +42,8 @@ The default values for the standalone installation are:
 ### postgres Container
   - *./data/postgresql/data:/var/lib/postgresql/data*
 
+## Hints
+
+Approx. time with medium fast internet connection: 10 minutes
+
+Initial user/password: no authorization implemented yet
