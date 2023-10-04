@@ -11,6 +11,7 @@ Clone the github repository. If necessary change the ports in the environment fi
 ```
 git clone https://github.com/bibbox/app-hapi-fhir
 cd app-hapi-fhir
+chmod -R 777 data
 docker network create bibbox-default-network
 docker-compose up -d
 ```
