@@ -7,6 +7,7 @@
 		"catalogue_url": "",
 		"application_url": "https://hapifhir.io/hapi-fhir/",
 		"tags": ["Tag1", "Tag2"],
-		"application_documentation_url": "https://hapifhir.io/hapi-fhir/docs/"
+		"application_documentation_url": "https://hapifhir.io/hapi-fhir/docs/",
+		"instance_information": "<p> HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare interoperability in Java. </p>"
 
 }
