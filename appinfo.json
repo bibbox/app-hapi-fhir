@@ -3,7 +3,7 @@
 		"short_name": "HAPI FHIR",
 		"version": "v6.6.0",
 		"description": "HAPI FHIR version 6.6.0. HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare interoperability in Java.",
-        	"short_description": "HAPI FHIR version 6.6.0.",
+        "short_description": "HAPI FHIR version 6.6.0.",
 		"catalogue_url": "",
 		"application_url": "https://hapifhir.io/hapi-fhir/",
 		"tags": ["Tag1", "Tag2"],
