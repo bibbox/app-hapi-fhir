@@ -20,7 +20,7 @@ Follow the link FHIR BASE on the start page to get to the swagger UI. Alternativ
 
 ### Global FHIR test server
 
-You can chnage to the global HAPI FHIR testing server on the top right:
+You can change to the global HAPI FHIR testing server on the top right:
 
 ![Screenshot04](assets/install-screen-04.png)
 
